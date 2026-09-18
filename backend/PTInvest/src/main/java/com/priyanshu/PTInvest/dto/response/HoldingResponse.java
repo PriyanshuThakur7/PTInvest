@@ -10,6 +10,8 @@ import lombok.Getter;
 @Getter
 public class HoldingResponse {
 
+    private Long id;
+
     private String symbol;
 
     private AssetType assetType;
@@ -29,6 +31,7 @@ public class HoldingResponse {
     private BigDecimal gainLossPct;
 
     public HoldingResponse(Holding holding) {
+        this.id = holding.getId();
         this.symbol=holding.getSymbol();
         this.assetType=holding.getAssetType();
         this.quantity=holding.getQuantity();
