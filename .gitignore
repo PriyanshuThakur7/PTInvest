@@ -1,0 +1,9 @@
+# Maven local repository
+.maven-repo/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# VS Code
+.vscode/
